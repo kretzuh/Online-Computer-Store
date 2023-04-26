@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE COMPUTER STORE
+    </title>
+</head>
+<body>
+<h1 style="text-align: center">CUSTOMIZE YOUR PC</h1>
+<form action="#" id="form" style="text-align: center">
+    <select id="processor" onchange="select_cpu(value)">
+        <option>SELECT YOUR PROCESSOR</option>
+    </select>
+    <br> <br> <br>
+    <select id="hdd" onchange="select_hdd(value)">
+        <option>SELECT YOUR HDD CAPACITY</option>
+    </select>
+    <br> <br> <br>
+    <select id="ram" onchange="select_ram(value)">
+        <option>SELECT YOUR RAM SIZE</option>
+    </select>
+    <br> <br> <br>
+    <select id="video" onchange="select_video(value)">
+        <option>SELECT YOUR VIDEO CARD TYPE</option>
+    </select>
+    <br> <br> <br>
+    <select id="displays" onchange="select_displays(value)">
+        <option>SELECT YOUR DISPLAY SIZE</option>
+    </select>
+    <br> <br> <br>
+    <select id="displayt" onchange="select_displayt(value)">
+        <option>SELECT YOUR DISPLAY TYPE</option>
+    </select>
+    <br> <br> <br>
+    <button type="submit" form="form" value="BUY" onclick="thankyou()">BUY</button>
+    <button form="form" value="CANCEL" onclick="resetForm()">CANCEL</button>
+</form>
+<h2 style="text-align: center">YOUR SELECTED COMPUTER CONFIGURATION IS:</h2>
+<div style="text-align: center" id="configList">
+    <p id="selected_processor"></p>
+    <p id="selected_hdd"></p>
+    <p id="selected_ram"></p>
+    <p id="selected_video"></p>
+    <p id="selected_displays"></p>
+    <p id="selected_displayt"></p>
+    <p id="total_price"></p>
+</div>
+
+
+
+
+<script src="OnlineComputerStore.js">
+
+</script>
+</body>
+
+</html>
+
+
