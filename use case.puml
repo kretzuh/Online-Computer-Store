@@ -1,0 +1,14 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+user --> (inputs or selects parameters and their values)
+user --> (the message 'Thank You!' will be displayed in the tab) : if the user\nclicks the Buy button
+user --> (all inputs are set to default values) : if the user\nclicks the Cancel button
+
+
+(inputs or selects parameters and their values) --> (shows live updated 'computer configuration')
+(shows live updated 'computer configuration') --> (computes the configuration prices)
+
+
+@enduml

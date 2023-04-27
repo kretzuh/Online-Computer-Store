@@ -1,0 +1,101 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class landing_page {
+
+}
+
+landing_page "1"*-- "1" input_form
+
+class input_form {
+select_input()
+reset_inputs_to_default()
+afiseaza_mesaj()
+
+}
+
+input_form *-- processor_type
+input_form *-- hdd_capacity
+input_form *-- ram_value
+input_form *-- display_type
+input_form *-- display_size
+input_form *-- model
+
+input_form *-- cancel_button
+input_form *-- buy_button
+landing_page o-- message
+computer_configuration o-- landing_page
+
+class parameter {
+id
+name
+price
+
+}
+
+parameter <-- default_value
+parameter <|-- processor_type
+parameter <|-- hdd_capacity
+parameter <|-- ram_value
+parameter <|-- display_type
+parameter <|-- producer
+parameter <|-- model
+
+
+class computer_configuration {
+configuration_price
+selected ram_value
+selected hdd_capacity
+selected model, etc
+compute_price()
+}
+
+class processor_type {
+
+}
+
+class hdd_capacity {
+
+}
+
+class ram_value {
+
+}
+
+class display_type {
+
+}
+
+class display_size {
+
+}
+
+
+class model {
+
+}
+
+class producer {
+
+}
+
+
+class default_value {
+
+}
+
+
+class buy_button {
+
+}
+
+class cancel_button {
+
+}
+
+class message {
+
+}
+
+
+@enduml
